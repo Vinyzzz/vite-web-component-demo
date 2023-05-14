@@ -1,0 +1,41 @@
+@import "../../common.css";
+
+:host {
+  display: block;
+  text-align: center;
+  font-size: 48px;
+}
+
+
+.icon {
+  height: 240px;
+  display: block;
+  margin: auto;
+
+  &:hover {
+    filter: drop-shadow(0 0 1em #7bcbf1aa);
+  }
+}
+
+.use {
+  display: flex;
+  gap: 36px;
+  margin: 36px;
+  font-size: 18px;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 8px 16px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  background: var(--btn-bg-color);
+
+  &:hover {
+    border-color: var(--btn-hover-color);
+  }
+}
